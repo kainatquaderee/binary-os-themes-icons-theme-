@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Binary-round-Light
+Comment=An Materia Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Binary-round-Light
+MetacityTheme=Binary-round-Light
+IconTheme=Binary
+CursorTheme=Binary
+ButtonLayout=close,minimize,maximize:menu
