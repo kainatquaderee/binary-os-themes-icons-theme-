@@ -84,7 +84,7 @@
        d="M 9 3 C 6.7840006 3 5 4.7840006 5 7 L 5 53 C 5 55.215999 6.7840006 57 9 57 L 55 57 C 57.215999 57 59 55.215999 59 53 L 59 7 C 59 4.7840006 57.215999 3 55 3 L 9 3 z M 9 4 L 55 4 C 56.661999 4 58 5.338001 58 7 L 58 53 C 58 54.661999 56.661999 56 55 56 L 9 56 C 7.338001 56 6 54.661999 6 53 L 6 7 C 6 5.338001 7.338001 4 9 4 z "
        transform="scale(0.26458333)" />
     <rect
-       style="opacity:0.95;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.15;paint-order:stroke fill markers"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.15;paint-order:stroke fill markers"
        id="rect832"
        width="13.758333"
        height="13.758333"

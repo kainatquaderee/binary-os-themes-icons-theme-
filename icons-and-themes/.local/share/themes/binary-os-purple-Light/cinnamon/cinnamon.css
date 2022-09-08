@@ -518,7 +518,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-size: 1em;
   padding: 0px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 16px rgba(0, 0, 0, 0.24);
-  background-color: rgba(247, 247, 247, 0.8);
+  background-color: #F7F7F7;
 }
 
 .panel-top .panel-button:hover,

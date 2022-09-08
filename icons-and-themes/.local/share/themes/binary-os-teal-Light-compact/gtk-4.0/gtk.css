@@ -1612,7 +1612,7 @@ headerbar {
   color: rgba(0, 0, 0, 0.87);
   min-height: 36px;
   padding: 0 4px;
-  background-color: rgba(247, 247, 247, 0.98);
+  background-color: #F7F7F7;
 }
 
 headerbar:disabled {
@@ -2203,7 +2203,7 @@ popover.background > contents {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   padding: 4px;
   box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 10.8px 0 rgba(0, 0, 0, 0.12);
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: #FFFFFF;
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }

@@ -871,7 +871,7 @@ button.destructive-action.flat:checked {
 window.background > box.vertical > toolbar.primary-toolbar > toolitem > .linked > button:not(.toggle):not(.raised):not(.flat), window.background > box.vertical > toolbar.primary-toolbar > toolitem button.flat.scale, window.background > box.vertical > toolbar.primary-toolbar > toolitem > .linked > button.image-button.raised, window.csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > .linked > button,
 window.csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > box.horizontal > button,
 window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > .linked > button,
-window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > box.horizontal > button, .nautilus-window headerbar revealer > button, filechooser #pathbarbox > stack > box > button, headerbar button.titlebutton:not(.suggested-action):not(.destructive-action), button.close, button.circular {
+window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > box.horizontal > button, .nautilus-window headerbar revealer > button, filechooser #pathbarbox > stack > box > button, button.close, button.circular {
   border-radius: 9999px;
 }
 
@@ -879,7 +879,7 @@ window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem >
 window.background > box.vertical > toolbar.primary-toolbar > toolitem > .linked > button:not(:hover):not(:focus):not(:active):not(:checked):not(.toggle):not(.raised):not(.flat), window.background > box.vertical > toolbar.primary-toolbar > toolitem button.flat.scale:not(:hover):not(:focus):not(:active):not(:checked), window.background > box.vertical > toolbar.primary-toolbar > toolitem > .linked > button.image-button.raised:not(:hover):not(:focus):not(:active):not(:checked), window.csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > .linked > button:not(:hover):not(:focus):not(:active):not(:checked),
 window.csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > box.horizontal > button:not(:hover):not(:focus):not(:active):not(:checked),
 window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > .linked > button:not(:hover):not(:focus):not(:active):not(:checked),
-window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > box.horizontal > button:not(:hover):not(:focus):not(:active):not(:checked), .nautilus-window headerbar revealer > button:not(:hover):not(:focus):not(:active):not(:checked), filechooser #pathbarbox > stack > box > button:not(:hover):not(:focus):not(:active):not(:checked), headerbar button.titlebutton:not(:hover):not(:focus):not(:active):not(:checked):not(.suggested-action):not(.destructive-action), button.close:not(:hover):not(:focus):not(:active):not(:checked), button.circular:not(:hover):not(:focus):not(:active):not(:checked) {
+window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem > box.horizontal > button:not(:hover):not(:focus):not(:active):not(:checked), .nautilus-window headerbar revealer > button:not(:hover):not(:focus):not(:active):not(:checked), filechooser #pathbarbox > stack > box > button:not(:hover):not(:focus):not(:active):not(:checked), button.close:not(:hover):not(:focus):not(:active):not(:checked), button.circular:not(:hover):not(:focus):not(:active):not(:checked) {
   border-color: rgba(255, 255, 255, 0.12);
 }
 
@@ -1582,11 +1582,11 @@ searchbar > revealer > box {
 }
 
 headerbar button.titlebutton:not(.suggested-action):not(.destructive-action) {
-  min-height: 22px;
-  min-width: 22px;
+  min-height: 36px;
+  min-width: 36px;
   padding: 0 0;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin: 0 -3px;
+  border-radius: 0;
 }
 
 .titlebar {
@@ -1594,7 +1594,7 @@ headerbar button.titlebutton:not(.suggested-action):not(.destructive-action) {
   border-radius: 3px 3px 0 0;
   color: white;
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.12);
-  background-color: rgba(32, 32, 32, 0.98);
+  background-color: #202020;
 }
 
 .titlebar:disabled {
@@ -1857,6 +1857,30 @@ headerbar.windowhandle > button.popup label, headerbar.windowhandle > button.pop
   border-radius: 0;
 }
 
+.tiled headerbar > box.right button.titlebutton.close, .tiled-top headerbar > box.right button.titlebutton.close, .tiled-right headerbar > box.right button.titlebutton.close, .tiled-bottom headerbar > box.right button.titlebutton.close, .tiled-left headerbar > box.right button.titlebutton.close, .maximized headerbar > box.right button.titlebutton.close, .fullscreen headerbar > box.right button.titlebutton.close {
+  border-top-right-radius: 0;
+}
+
+.tiled headerbar > box.left button.titlebutton.close, .tiled-top headerbar > box.left button.titlebutton.close, .tiled-right headerbar > box.left button.titlebutton.close, .tiled-bottom headerbar > box.left button.titlebutton.close, .tiled-left headerbar > box.left button.titlebutton.close, .maximized headerbar > box.left button.titlebutton.close, .fullscreen headerbar > box.left button.titlebutton.close {
+  border-top-left-radius: 0;
+}
+
+headerbar > box.right {
+  margin-right: -1px;
+}
+
+headerbar > box.right button.titlebutton.close {
+  border-top-right-radius: 3px;
+}
+
+headerbar > box.left {
+  margin-left: -1px;
+}
+
+headerbar > box.left button.titlebutton.close {
+  border-top-left-radius: 3px;
+}
+
 headerbar button.titlebutton:not(.suggested-action):not(.destructive-action).close:hover, headerbar button.titlebutton:not(.suggested-action):not(.destructive-action).close:backdrop:hover {
   background-color: #E57373;
   color: white;
@@ -1870,12 +1894,13 @@ headerbar button.titlebutton:not(.suggested-action):not(.destructive-action).clo
 headerbar.default-decoration {
   background-color: #202020;
   border-radius: 3px 3px 0 0;
-  min-height: 20px;
-  padding: 4px;
+  min-height: 28px;
+  padding: 0 2px;
   box-shadow: none;
 }
 
 .csd headerbar.default-decoration {
+  padding: 0 3px;
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.12);
 }
 
@@ -1889,10 +1914,10 @@ headerbar.default-decoration:backdrop {
 }
 
 headerbar.default-decoration button.titlebutton:not(.suggested-action):not(.destructive-action) {
-  min-height: 20px;
-  min-width: 20px;
-  margin: 0 2px;
-  padding: 0;
+  min-height: 28px;
+  min-width: 28px;
+  margin: -2px;
+  padding: 0 4px;
 }
 
 .solid-csd headerbar:dir(rtl), .solid-csd headerbar:dir(ltr) {
@@ -2144,7 +2169,7 @@ menu,
 .context-menu {
   margin: 3px 0;
   padding: 3px 0;
-  background-color: rgba(60, 60, 60, 0.98);
+  background-color: #3C3C3C;
   background-clip: border-box;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -2278,7 +2303,7 @@ popover,
 popover.background {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   padding: 2px;
-  background-color: rgba(60, 60, 60, 0.98);
+  background-color: #3C3C3C;
   box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.1), 0 4px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 6px 0 rgba(0, 0, 0, 0.06);
   background-clip: border-box;
 }
@@ -4411,7 +4436,7 @@ popover.emoji-completion .emoji:hover {
 .nautilus-window.background.csd {
   background-color: rgba(48, 48, 48, 0.95);
   border-radius: 0 0 3px 3px;
-  background-color: rgba(48, 48, 48, 0.95);
+  background-color: #303030;
 }
 
 .nautilus-window.background.csd.unified {
@@ -4419,11 +4444,11 @@ popover.emoji-completion .emoji:hover {
 }
 
 .nautilus-window.background.csd.unified headerbar.titlebar {
-  background-color: rgba(32, 32, 32, 0.98);
+  background-color: #202020;
 }
 
 .nautilus-window.background.csd.unified placessidebar.sidebar {
-  background-color: rgba(48, 48, 48, 0.95);
+  background-color: #303030;
 }
 
 .nautilus-window.background.csd placessidebar.sidebar, .nautilus-window.background.csd placessidebar.sidebar > viewport.frame > list > separator {
